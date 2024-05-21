@@ -8,9 +8,10 @@ dotenv.load_dotenv()
 bot = lightbulb.BotApp(
     os.environ["BOT_TOKEN"],
     intents=Intents.ALL,
-    banner=None,
+    prefix="."
 )
 bot.load_extensions_from("./extensions/")
+
 
 
 if __name__ == "__main__":
